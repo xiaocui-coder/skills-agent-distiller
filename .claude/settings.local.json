@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(uv run python -c ' *)",
+      "Bash(uv run *)",
+      "Bash(curl -s http://localhost:8000/api/skills)",
+      "Bash(curl -s http://localhost:8000/api/skills/amazon-bestsellers)",
+      "Bash(npx tsc *)",
+      "Bash(npm run *)",
+      "Bash(python3 -c ' *)",
+      "Bash(node -e ' *)",
+      "Bash(curl -s http://localhost:8000/api/skills/pdf)",
+      "Bash(curl *)",
+      "Bash(powershell -Command 'Get-Process -Name python -ErrorAction SilentlyContinue | Where-Object { $_.CommandLine -match '\\\\''langchain-skills-distiller-web'\\\\'' } | Stop-Process -Force')",
+      "Bash(netstat -ano)",
+      "Bash(taskkill //F //PID 28852 //PID 46876)",
+      "Bash(powershell *)",
+      "Bash(python3 -c \"import json,sys; data=json.load\\(sys.stdin\\); print\\(f'Total: {len\\(data\\)}'\\); [print\\(f' {s[\\\\\"name\\\\\"]}: {s[\\\\\"path\\\\\"][:60]}'\\) for s in data]\")"
+    ]
+  }
+}
