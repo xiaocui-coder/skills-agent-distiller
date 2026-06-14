@@ -26,7 +26,7 @@
 - **流式交互** — WebSocket 实时推送思考过程、文本、工具调用事件
 - **双 LLM 支持** — Anthropic Claude（默认） / 阿里通义千问
 - **Web + CLI 双模式** — React 前端界面 或 终端交互式命令行
-- **22+ 内置技能** — PDF、PPT、网页抓取、新闻提取、Amazon 数据、小红书创作、RAG 知识库等
+- **2+ 内置技能** — PDF、日报
 
 ---
 
@@ -263,33 +263,6 @@ agent = LangChainSkillsAgent(enable_distiller=False)
 | DELETE | `/api/distiller/store/skills/{id}` | 删除存储的 Skill |
 
 启动后访问 http://localhost:8000/docs 查看 Swagger API 文档。
-
----
-
-## 内置技能
-
-| 技能 | 说明 |
-|------|------|
-| `pdf` | PDF 读取、合并、拆分、旋转、水印、OCR 等 |
-| `ppt-generation` | AI 生成 PPT 幻灯片（含图片生成） |
-| `news-extractor` | 微信公众号、今日头条等新闻站点内容提取 |
-| `web-content-fetcher` | 任意 URL 内容提取为 Markdown |
-| `amazon-bestsellers` | Amazon 商品数据抓取（Best Sellers 排序） |
-| `tavily-search` | Tavily AI 搜索 API 集成 |
-| `Auto-Redbook-Skills` | 小红书笔记素材创作（8 种排版主题） |
-| `rag-skill` | 本地知识库检索和问答 |
-| `ui-ux-pro-max` | UI/UX 设计智能（50 种风格、21 色板、9 技术栈） |
-| `dev-builder` | 全栈开发工程师技能包 |
-| `product-spec-builder` | 产品经理技能包 |
-| `python-code-review` | Python 代码审查 |
-| `karpathy-guidelines` | LLM 编码行为准则 |
-| `image-generation` | AI 图片生成 |
-| `create-skill` | 创建新技能 |
-| `memory` | 记忆管理 |
-| `save_tb_comments` | 天猫商品评论抓取 |
-| `dy_crawler_skill` | 抖音数据抓取 |
-| `skill-creator-main` | SKILL.md 完整创建流程 |
-| `ui-prompt-generator` | UI 提示词设计 |
 
 ---
 
